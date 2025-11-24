@@ -498,6 +498,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114424554979335932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,6 +726,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114846613208100520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,6 +1067,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114336613414296858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,7 +1178,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95118546262444936
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1183,6 +1192,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1428,7 +1438,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95413800217285990
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1442,6 +1452,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1630,6 +1641,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     Initialized: 0
+    ConditionPropertyName: 
+    EnumConditionPropertyName: 
+    EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
   IgnoreTimescale: 1
   CanFadeToCurrentAlpha: 1
   ShouldBlockRaycasts: 0
@@ -2490,6 +2504,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!1 &1515947918482978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,6 +3336,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114880209470590598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3597,7 +3617,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95461641640684866
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3611,6 +3631,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -3808,7 +3829,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95800355620549592
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3822,6 +3843,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -4043,6 +4065,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!1 &1706165118094336
 GameObject:
   m_ObjectHideFlags: 0
@@ -4213,6 +4238,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114426087019456690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4631,6 +4659,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!1 &1731059964052100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4798,6 +4829,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!1 &1737468962540040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,6 +4845,7 @@ GameObject:
   - component: {fileID: 124846487602988218}
   - component: {fileID: 114905645026365078}
   - component: {fileID: 114714365709490776}
+  - component: {fileID: 6116317877156814781}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -4844,7 +4879,7 @@ Camera:
   m_GameObject: {fileID: 1737468962540040}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -4942,11 +4977,56 @@ MonoBehaviour:
   HideMobileControlsInEditor: 0
   MovementControl: 0
   ForceDesktopIfPrimaryAxisActive: 0
+  DelayedButtonPresses: 0
   AutoRevertToMobileIfPrimaryAxisInactive: 0
   AutoRevertToMobileIfPrimaryAxisInactiveDuration: 10
   SmoothMovement: 1
   Threshold: {x: 0.1, y: 0.4}
   RotateInputBasedOnCameraDirection: 0
+--- !u!114 &6116317877156814781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737468962540040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 1
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1743983407519520
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5218,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 0
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!1 &1748334400293826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,7 +5261,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95649525623370682
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5192,6 +5275,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -5293,8 +5377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f759f536b039f2b46881cfc8ea77c496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchievementDisplayPrefab: {fileID: 114000010642984398, guid: bf6e65de4f70a4dcf99ceb68e999d287,
-    type: 3}
+  AchievementDisplayPrefab: {fileID: 114000010642984398, guid: bf6e65de4f70a4dcf99ceb68e999d287, type: 3}
   AchievementDisplayDuration: 5
   AchievementFadeDuration: 0.2
 --- !u!1 &1771615006975168
@@ -5466,6 +5549,9 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
+  PreventLeftClick: 0
+  PreventMiddleClick: 1
+  PreventRightClick: 1
 --- !u!114 &114175238251012136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5905,7 +5991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879089594584572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5463d50a0cd9b2449a50f538278303d2, type: 3}
   m_Name: 
@@ -5943,6 +6029,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     Initialized: 0
+    ConditionPropertyName: 
+    EnumConditionPropertyName: 
+    EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
   FlashOutTween:
     MMTweenDefinitionType: 0
     MMTweenCurve: 0
@@ -5971,6 +6060,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     Initialized: 0
+    ConditionPropertyName: 
+    EnumConditionPropertyName: 
+    EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
   DebugSettings:
     ChannelMode: 0
     Channel: 0
@@ -6667,7 +6759,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95038093170913990
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6681,6 +6773,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -6707,21 +6800,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2253350952755945297}
-  - component: {fileID: 6397043143770088895}
-  - component: {fileID: 2951571811064220447}
-  - component: {fileID: 1592226061931204589}
-  - component: {fileID: 6069917397728143520}
-  - component: {fileID: 6462039182240378332}
-  - component: {fileID: 1940566286900971137}
-  - component: {fileID: 942648134099162233}
-  - component: {fileID: 7320892218947113520}
+  - component: {fileID: 1902734146310548296}
+  - component: {fileID: 2617794532316124417}
+  - component: {fileID: 5556946670125927821}
+  - component: {fileID: 8270151626621319634}
+  - component: {fileID: 7759514032850646331}
+  - component: {fileID: 7817252044842712677}
+  - component: {fileID: 2707459930716351634}
+  - component: {fileID: 6533189793365063718}
   m_Layer: 0
   m_Name: PostProcessVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2253350952755945297
 Transform:
   m_ObjectHideFlags: 0
@@ -6737,7 +6830,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4847471433058572}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6397043143770088895
+--- !u!114 &1902734146310548296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6746,15 +6839,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: feb1f9f6501aa2f4fba936867f4dd1a8, type: 2}
-  isGlobal: 1
+  m_IsGlobal: 1
+  priority: 0
   blendDistance: 0
   weight: 1
-  priority: 0
---- !u!114 &2951571811064220447
+  sharedProfile: {fileID: 11400000, guid: d535bf2709e9a6e4b9bd461aebbbe0d9, type: 2}
+--- !u!114 &2617794532316124417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6763,15 +6856,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b05280df6098734a9d93da081ea29f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 97e17950a649fa84189ca3446539280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CameraTransform: {fileID: 1137535785635986062}
   FocusTargets: []
-  Offset: {x: 0, y: 0, z: 0}
   FocusTargetID: 0
-  Aperture: 1.25
---- !u!114 &1592226061931204589
+  Aperture: 0.1
+--- !u!114 &5556946670125927821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6780,7 +6872,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04189ce672fd8c349b61eb900b1dc0ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 485e02e02c638cf4b9ca8344fd6213a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -6867,7 +6959,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapThresholdZero: 0
   RemapThresholdOne: 0
---- !u!114 &6069917397728143520
+--- !u!114 &8270151626621319634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6876,7 +6968,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1297b688774526f418895a2f09176619, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d01154bce0123949a8800d85a063092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -6928,7 +7020,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapIntensityZero: 0
   RemapIntensityOne: 1
---- !u!114 &6462039182240378332
+--- !u!114 &7759514032850646331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6937,7 +7029,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416f266b197306a49975dadec6e05526, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d1f877a9ca4ed48963fe747f743dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -7094,7 +7186,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapContrastZero: 0
   RemapContrastOne: 100
-  ShakeColorFilter: 0
+  ColorFilterMode: 0
   ColorFilterGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -7125,7 +7217,41 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
---- !u!114 &1940566286900971137
+  ColorFilterDestination: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  ColorFilterCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7817252044842712677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7134,7 +7260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4792d6bb2cfe7644da1e6972d3da260d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f39d038dce44a7428bbe3628ec512d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -7256,7 +7382,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapFocalLengthZero: 0
   RemapFocalLengthOne: 0
---- !u!114 &942648134099162233
+--- !u!114 &2707459930716351634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7265,7 +7391,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7efc6a4a233d87b4fbc72cda82ca4a31, type: 3}
+  m_Script: {fileID: 11500000, guid: bbf0ffd851dbe2d4fb5d79335529e131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -7379,8 +7505,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   RemapIntensityZero: 0
-  RemapIntensityOne: 50
---- !u!114 &7320892218947113520
+  RemapIntensityOne: 0.5
+--- !u!114 &6533189793365063718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7389,7 +7515,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759855279148308545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cf12de3b3c98d489779a3382046725, type: 3}
+  m_Script: {fileID: 11500000, guid: 94df1ffae0c2c7d4ba695b68267eea10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ChannelMode: 0
@@ -7440,7 +7566,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   RemapIntensityZero: 0
-  RemapIntensityOne: 0.1
+  RemapIntensityOne: 1
   InterpolateColor: 0
   ColorCurve:
     serializedVersion: 2
@@ -7542,7 +7668,7 @@ MonoBehaviour:
     m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
-  m_StreamingVersion: 20230301
+  m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
     TrackingTarget: {fileID: 0}
@@ -7677,6 +7803,7 @@ MonoBehaviour:
   ChannelMode: 0
   Channel: 0
   MMChannelDefinition: {fileID: 0}
+  Interruptable: 0
   ZoomTween:
     MMTweenDefinitionType: 1
     MMTweenCurve: 4
@@ -7705,6 +7832,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     Initialized: 0
+    ConditionPropertyName: 
+    EnumConditionPropertyName: 
+    EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
   TestMode: 0
   TestFieldOfView: 30
   TestTransitionDuration: 0.1
@@ -7736,9 +7866,9 @@ GameObject:
   - component: {fileID: 1117384771960154654}
   - component: {fileID: 1043896166253926628}
   - component: {fileID: 1073552940209001424}
-  - component: {fileID: 1032431540898572916}
   - component: {fileID: 1031630300741307132}
   - component: {fileID: 6639677612785801984}
+  - component: {fileID: 2770747723042033588}
   m_Layer: 10
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -7828,66 +7958,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135989009887641804}
   m_Enabled: 1
---- !u!114 &1032431540898572916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135989009887641804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1137535785635986062}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 1
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!114 &1031630300741307132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7932,3 +8002,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8aa3525151bb343b66b059b6095946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2770747723042033588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135989009887641804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras:
+  - {fileID: 20646998284766860}
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
