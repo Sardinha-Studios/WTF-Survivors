@@ -2,49 +2,85 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using SardinhaStudios;
+using UnityEngine.UI;
 
 public class LevelUpManager : Singleton<LevelUpManager>
 {
-    public PlayerDeck playerDeck;
-    public GameObject levelUpPanel;
-    public CardSelectionUI[] cardOptions; // Array de 3 botões de UI
-    
-    int playerLevel = 1;
-    int currentXP = 0;
-    int xpToNextLevel = 100;
-    
+    [SerializeField] private PlayerDeck playerDeck;
+    [SerializeField] private GameObject levelUpPanel;
+    [SerializeField] private Slider levelProgressBar;
+    [SerializeField] private CardSelectionUI[] cardOptions;
+
+    private int playerLevel = 1;
+    private int currentXP = 0;
+    private int xpToNextLevel = 100;
+
+    private Queue<int> pendingLevelUps = new Queue<int>();
+    private bool isShowingLevelUp = false;
+
     void Start()
     {
         if (levelUpPanel != null)
             levelUpPanel.SetActive(false);
+
+        UpdateLevelProgressBar();
     }
-    
+
+    private void UpdateLevelProgressBar()
+    {
+        if (levelProgressBar != null)
+        {
+            levelProgressBar.maxValue = xpToNextLevel;
+            levelProgressBar.value = currentXP;
+        }
+    }
+
+    public PlayerDeck GetPlayerDeck()
+    {
+        return playerDeck;
+    }
+
     public void GainXP(int amount)
     {
         currentXP += amount;
-        
-        if (currentXP >= xpToNextLevel)
+        UpdateLevelProgressBar();
+
+        // Check for multiple level ups
+        while (currentXP >= xpToNextLevel)
         {
             LevelUp();
         }
+
+        // If does not show UI and has pending level ups, shows the first one
+        if (!isShowingLevelUp && pendingLevelUps.Count > 0)
+        {
+            ShowNextLevelUp();
+        }
     }
-    
+
     void LevelUp()
     {
         playerLevel++;
         currentXP -= xpToNextLevel;
         xpToNextLevel = Mathf.RoundToInt(xpToNextLevel * 1.2f);
-        
-        Debug.Log($"Level Up! Nível {playerLevel}");
-        ShowLevelUpOptions();
+
+        pendingLevelUps.Enqueue(playerLevel);
+        Debug.Log($"Level Up! Level {playerLevel} - {pendingLevelUps.Count} pending level up(s)");
     }
-    
-    void ShowLevelUpOptions()
+
+    void ShowNextLevelUp()
     {
-        Time.timeScale = 0f; // Pausa o jogo
-        
+        if (pendingLevelUps.Count == 0)
+            return;
+
+        isShowingLevelUp = true;
+        Time.timeScale = 0f; // Pausa game
+
+        int level = pendingLevelUps.Dequeue();
+        Debug.Log($"Showing level up options for level {level}");
+
         List<Card> options = playerDeck.GetAvailableCardsForSelection(3);
-        
+
         for (int i = 0; i < cardOptions.Length; i++)
         {
             if (i < options.Count)
@@ -57,18 +93,31 @@ public class LevelUpManager : Singleton<LevelUpManager>
                 cardOptions[i].gameObject.SetActive(false);
             }
         }
-        
+
         if (levelUpPanel != null)
             levelUpPanel.SetActive(true);
     }
-    
+
     public void SelectCard(Card card)
     {
         playerDeck.AddCard(card);
-        
+
         if (levelUpPanel != null)
             levelUpPanel.SetActive(false);
-        
-        Time.timeScale = 1f; // Despausa o jogo
+
+        isShowingLevelUp = false;
+
+        // If has pending level ups, show the next one
+        if (pendingLevelUps.Count > 0)
+        {
+            ShowNextLevelUp();
+        }
+        else
+        {
+            // Unpause when there are no more pending level ups
+            Time.timeScale = 1f;
+        }
+
+        UpdateLevelProgressBar();
     }
 }

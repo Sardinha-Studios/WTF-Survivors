@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class TestDeck : MonoBehaviour
 {
+    [SerializeField] private int xpAmount = 100;
+
     private InputSystem_Actions _inputActions;
 
     private void Awake()
@@ -27,6 +29,6 @@ public class TestDeck : MonoBehaviour
 
     private void OnGainXp(InputAction.CallbackContext context)
     {
-        LevelUpManager.Instance.GainXP(100);
+        LevelUpManager.Instance.GainXP(xpAmount);
     }
 }

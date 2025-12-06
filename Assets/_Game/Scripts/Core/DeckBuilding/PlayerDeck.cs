@@ -6,19 +6,19 @@ public class PlayerDeck : MonoBehaviour
     public List<Card> availableCards = new List<Card>(); // Todas as cartas do jogo
     public List<Card> currentDeck = new List<Card>(); // Cartas que o player possui
     private Dictionary<Card, int> cardLevels = new Dictionary<Card, int>();
-    
+
     [Header("Player Stats")]
     public float damage = 10f;
     public float attackSpeed = 1f;
     public float health = 100f;
     public float moveSpeed = 5f;
     public float critChance = 5f;
-    
+
     void Start()
     {
         UpdatePlayerStats();
     }
-    
+
     public void AddCard(Card card)
     {
         if (!currentDeck.Contains(card))
@@ -31,17 +31,17 @@ public class PlayerDeck : MonoBehaviour
         {
             LevelUpCard(card);
         }
-        
+
         UpdatePlayerStats();
     }
-    
+
     void LevelUpCard(Card card)
     {
         if (cardLevels.ContainsKey(card))
         {
             cardLevels[card]++;
             Debug.Log($"{card.cardName} agora está no nível {cardLevels[card]}");
-            
+
             // Se atingir max level e tiver upgrade disponível
             if (cardLevels[card] >= card.maxLevel && card.upgradeCard != null)
             {
@@ -52,12 +52,12 @@ public class PlayerDeck : MonoBehaviour
             }
         }
     }
-    
+
     public int GetCardLevel(Card card)
     {
         return cardLevels.ContainsKey(card) ? cardLevels[card] : 0;
     }
-    
+
     void UpdatePlayerStats()
     {
         // Reset stats base
@@ -66,7 +66,7 @@ public class PlayerDeck : MonoBehaviour
         health = 100f;
         moveSpeed = 5f;
         critChance = 5f;
-        
+
         // Aplica bônus de todas as cartas
         foreach (var card in currentDeck)
         {
@@ -77,15 +77,15 @@ public class PlayerDeck : MonoBehaviour
             moveSpeed += card.moveSpeedBonus * level;
             critChance += card.critChanceBonus * level;
         }
-        
+
         Debug.Log($"Stats atualizados - Dano: {damage}, HP: {health}, Velocidade: {moveSpeed}");
     }
-    
+
     public List<Card> GetAvailableCardsForSelection(int count = 3)
     {
         List<Card> options = new List<Card>();
         List<Card> pool = new List<Card>();
-        
+
         // Cria pool de cartas disponíveis
         foreach (var card in availableCards)
         {
@@ -109,25 +109,25 @@ public class PlayerDeck : MonoBehaviour
                     pool.Add(card);
             }
         }
-        
+
         // Seleciona cartas aleatórias do pool
         for (int i = 0; i < count && pool.Count > 0; i++)
         {
             int randomIndex = Random.Range(0, pool.Count);
             Card selected = pool[randomIndex];
-            
+
             if (!options.Contains(selected))
             {
                 options.Add(selected);
             }
-            
+
             // Remove todas as instâncias desta carta do pool
             pool.RemoveAll(c => c == selected);
         }
-        
+
         return options;
     }
-    
+
     int GetRarityWeight(Rarity rarity)
     {
         return rarity switch
